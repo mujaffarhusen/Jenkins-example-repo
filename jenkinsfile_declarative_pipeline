@@ -1,0 +1,15 @@
+pipeline{
+      agent{ 
+      node{
+        label 'muajaffar_pc_vm'
+      }
+  }
+      stages{
+          stage("Welcome"){
+              steps{
+                 echo "Welcome to jenkinsfile"
+                 sh "$PWD"
+              }
+          }
+      }
+}
