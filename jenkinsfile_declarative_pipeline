@@ -1,9 +1,5 @@
 pipeline{
-      agent{ 
-      node{
-        label 'muajaffar_pc_vm'
-      }
-  }
+      agent any 
       stages{
           stage("Welcome"){
               steps{
