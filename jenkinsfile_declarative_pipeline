@@ -4,7 +4,6 @@ pipeline{
           stage("Welcome"){
               steps{
                  echo "Welcome to jenkinsfile"
-                 sh "$PWD"
               }
           }
       }
